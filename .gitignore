@@ -1,5 +1,1 @@
-# .gitignore
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
+.qodo
