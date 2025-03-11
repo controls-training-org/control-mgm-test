@@ -4,7 +4,7 @@ organisational_unit_root_id = "r-oqgn"
 controls = [
   {
     control_names = [
-      "AWS-GR_RESTRICTED_COMMON_PORTS"
+      "KBXFFJCCXCCZ"
     ],
     organizational_unit_ids = ["ou-oqgn-17e9npip"],
   }
