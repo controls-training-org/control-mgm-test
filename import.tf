@@ -33,18 +33,18 @@ import {
   id       = "${local.target_identifier},${each.value.control_identifier}"
   to       = aws_controltower_control.guardrails[each.key]
 }
-
+*/
 
 //This code works to import one guardrail at a time
 
-resource "aws_controltower_control" "guardrails_import_1x" {
-    control_identifier = "arn:aws:controltower:eu-west-1::control/YPSCUERHMDGL" 
+resource "aws_controltower_control" "guardrails_import_1" {
+    control_identifier = "arn:aws:controltower:eu-west-1::control/YPSCUERHMDGL" # CT.CLOUDWATCH.PR.1
     target_identifier = "arn:aws:organizations::200223571282:ou/o-x9clds5k02/ou-oqgn-17e9npip"
     }
 
 import {  
-  to = aws_controltower_control.guardrails_import_1x
+  to = aws_controltower_control.guardrails_import_1
   id = "arn:aws:organizations::200223571282:ou/o-x9clds5k02/ou-oqgn-17e9npip,arn:aws:controltower:eu-west-1::control/YPSCUERHMDGL"
   }
-  */
+  
 
