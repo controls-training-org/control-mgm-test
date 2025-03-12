@@ -37,13 +37,13 @@ import {
 
 //This code works to import one guardrail at a time
 
-resource "aws_controltower_control" "guardrails_import_1" {
+resource "aws_controltower_control" "guardrails_import_1x" {
     control_identifier = "arn:aws:controltower:eu-west-1::control/YPSCUERHMDGL" 
     target_identifier = "arn:aws:organizations::200223571282:ou/o-x9clds5k02/ou-oqgn-17e9npip"
     }
 
 import {  
-  to = aws_controltower_control.guardrails_import_1
+  to = aws_controltower_control.guardrails_import_1x
   id = "arn:aws:organizations::200223571282:ou/o-x9clds5k02/ou-oqgn-17e9npip,arn:aws:controltower:eu-west-1::control/YPSCUERHMDGL"
   }
 
