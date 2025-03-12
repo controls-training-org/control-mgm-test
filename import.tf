@@ -6,7 +6,7 @@ locals {
   //ARN of Guardrail -> https://docs.aws.amazon.com/controltower/latest/controlreference/control-metadata-tables.html
   guardrails = {
     guardrail_1 = {
-      control_identifier = "arn:aws:controltower:eu-west-1::control/KBXFFJCCXCCZ"
+      control_identifier = "arn:aws:controltower:eu-west-1::control/UAUKDTHXFEXN"
     }/*
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-central-1::control/AWS-GR_CLOUDTRAIL_CHANGE_PROHIBITED"
@@ -45,6 +45,4 @@ import {
   to = aws_controltower_control.guardrails_import_1
   id = "arn:aws:organizations::268702346055:ou/o-9ao1kn1kyw/ou-nmu5-5l01e2ro,arn:aws:controltower:eu-central-1::control/AWS-GR_CONFIG_AGGREGATION_AUTHORIZATION_POLICY"
   }
-
-  
 */
