@@ -7,7 +7,7 @@ locals {
   //ARN of Guardrail -> https://docs.aws.amazon.com/controltower/latest/controlreference/control-metadata-tables.html
   guardrails = {
     guardrail_test = {
-      control_identifier = "arn:aws:controltower:eu-west-1::control/KBXFFJCCXCCZ" #  CT.APIGATEWAY.PR.1
+      control_identifier = "arn:aws:controlcatalog:::control/5mhjhod4ky44haldvja2v4x3a" #  CT.APIGATEWAY.PR.1
     } /*
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-central-1::control/AWS-GR_CLOUDTRAIL_CHANGE_PROHIBITED"
