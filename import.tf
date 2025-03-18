@@ -14,9 +14,12 @@ locals {
     }
     guardrail_5 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK" # AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK
-    }*/
+    }
     guardrail_6 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_RESTRICT_ROOT_USER_ACCESS_KEYS" # AWS-GR_RESTRICT_ROOT_USER_ACCESS_KEYS
+    }*/
+    guardrail_7 = {
+      control_identifier = "arn:aws:controltower:eu-west-1::control/BRGLCIPEZUAS" # CT.LAMBDA.PV.1
     }
   }
 
