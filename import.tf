@@ -8,10 +8,11 @@ locals {
   guardrails = {
     guardrail_test = {
       control_identifier = "arn:aws:controlcatalog:::control/5mhjhod4ky44haldvja2v4x3a" # CT.APIGATEWAY.PR.1
-    }
+    }/*
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_LAMBDA_CHANGE_PROHIBITED" # AWS-GR_LAMBDA_CHANGE_PROHIBITED
-    }/*
+      prevent_destroy   = true  # This guardrail will be protected
+    }
     guardrail_5 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK" # AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK
     }
