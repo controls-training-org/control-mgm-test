@@ -10,12 +10,18 @@ locals {
     guardrail_test = {
       control_identifier = "arn:aws:controlcatalog:::control/5mhjhod4ky44haldvja2v4x3a" # CT.APIGATEWAY.PR.1
     }
+    guardrail_11 = {
+      control_identifier = "arn:aws:controlcatalog:::control/8zfd7nm6xbeevojp7yw6ihgo6" # AUTOSCALING_CAPACITY_REBALANCING
+    }
   }
 
   # Guardrails which cannot be destroyed (Mandatory guardrails)
   guardrails_protected = {
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_LAMBDA_CHANGE_PROHIBITED" # AWS-GR_LAMBDA_CHANGE_PROHIBITED
+    }
+    guardrail_10 = {
+      control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_CONFIG_AGGREGATION_AUTHORIZATION_POLICY" # AWS-GR_CONFIG_AGGREGATION_AUTHORIZATION_POLICY
     }
   }
 }
