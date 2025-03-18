@@ -14,10 +14,10 @@ locals {
     }
     guardrail_3 = {
       control_identifier = "arn:aws:controlcatalog:::control/e2saoisw5u8xe40acfetio41w" # AWS-GR_CONFIG_CHANGE_PROHIBITED
-    }/*
+    }
     guardrail_4 = {
-      control_identifier = "arn:aws:controltower:eu-central-1::control/AWS-GR_IAM_USER_MFA_ENABLED"
-    }*/
+      control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_EBS_OPTIMIZED_INSTANCE" # AWS-GR_EBS_OPTIMIZED_INSTANCE
+    }
   }
 
 }
