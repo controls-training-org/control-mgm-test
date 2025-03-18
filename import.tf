@@ -5,7 +5,7 @@ locals {
   target_identifier = "arn:aws:organizations::200223571282:ou/o-x9clds5k02/ou-oqgn-17e9npip"
 
   //ARN of Guardrail -> https://docs.aws.amazon.com/controltower/latest/controlreference/control-metadata-tables.html
-  guardrails = {
+  guardrails = {/*
     guardrail_test = {
       control_identifier = "arn:aws:controlcatalog:::control/5mhjhod4ky44haldvja2v4x3a" # CT.APIGATEWAY.PR.1
     }
@@ -14,6 +14,9 @@ locals {
     }
     guardrail_3 = {
       control_identifier = "arn:aws:controlcatalog:::control/e2saoisw5u8xe40acfetio41w" # AWS-GR_CONFIG_CHANGE_PROHIBITED
+    }*/
+    guardrail_5 = {
+      control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK" # AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK
     }
   }
 
