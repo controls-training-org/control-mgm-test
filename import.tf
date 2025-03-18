@@ -12,11 +12,11 @@ locals {
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_LAMBDA_CHANGE_PROHIBITED" # AWS-GR_LAMBDA_CHANGE_PROHIBITED
     }
-    guardrail_3 = {
-      control_identifier = "arn:aws:controlcatalog:::control/e2saoisw5u8xe40acfetio41w" # AWS-GR_CONFIG_CHANGE_PROHIBITED
-    }*/
     guardrail_5 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK" # AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK
+    }*/
+    guardrail_6 = {
+      control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_RESTRICT_ROOT_USER_ACCESS_KEYS" # AWS-GR_RESTRICT_ROOT_USER_ACCESS_KEYS
     }
   }
 
