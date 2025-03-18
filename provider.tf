@@ -16,7 +16,6 @@ terraform {
     dynamodb_table = "terraform-state-storage"
     encrypt        = true
     kms_key_id     = "alias/terraform-state-storage"
-    profile        = "kzg-dev-automation-account"
   }
 }
 
