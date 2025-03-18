@@ -8,11 +8,12 @@ locals {
   guardrails = {
     guardrail_test = {
       control_identifier = "arn:aws:controlcatalog:::control/5mhjhod4ky44haldvja2v4x3a" # CT.APIGATEWAY.PR.1
-    }/*
+      prevent_destroy   = false # This guardrail won't be protected for Terraform Destroy
+    }
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_LAMBDA_CHANGE_PROHIBITED" # AWS-GR_LAMBDA_CHANGE_PROHIBITED
-      prevent_destroy   = true  # This guardrail will be protected
-    }
+      prevent_destroy   = true  # This guardrail will be protected for Terraform Destroy
+    }/*
     guardrail_5 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK" # AWS-GR_EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK
     }
