@@ -131,4 +131,4 @@ locals {
 3. **Monitor Deployment**:
    - Observe the Terraform deployment pipeline in CodePipeline to ensure the import operation completes successfully.
    - Sign in to the AWS Management Console using the **automation account** and navigate to the S3 bucket.
-   - Verify the imported guardrails by checking the S3 objects for the configurations reflecting the imported guardrails.
+   - Verify the imported guardrails by checking the S3 objects for the configurations reflecting the imported guardrails
