@@ -5,10 +5,10 @@ locals {
   target_identifier = "arn:aws:organizations::200223571282:ou/o-x9clds5k02/ou-oqgn-17e9npip"
 
   //ARN of Guardrail -> https://docs.aws.amazon.com/controltower/latest/controlreference/control-metadata-tables.html
-  guardrails = {/*
+  guardrails = {
     guardrail_test = {
       control_identifier = "arn:aws:controlcatalog:::control/5mhjhod4ky44haldvja2v4x3a" # CT.APIGATEWAY.PR.1
-    }
+    }/*
     guardrail_2 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_LAMBDA_CHANGE_PROHIBITED" # AWS-GR_LAMBDA_CHANGE_PROHIBITED
     }
@@ -23,10 +23,10 @@ locals {
     }
     guardrail_8 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/UWYKAUHSRUKZ" # CT.DOCUMENTDB.PR.1
-    }*/
+    }
     guardrail_9 = {
       control_identifier = "arn:aws:controltower:eu-west-1::control/AWS-GR_RESTRICT_ROOT_USER" # AWS-GR_RESTRICT_ROOT_USER
-    }
+    }*/
   }
 
 }
